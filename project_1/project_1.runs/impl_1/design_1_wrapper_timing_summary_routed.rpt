@@ -1,0 +1,492 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 14 17:19:35 2026
+| Host         : vedanti running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : design_1_wrapper
+| Device       : 7s50-csga324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    5          inf        0.000                      0                    5           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             5 Endpoints
+Min Delay             5 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 A_0[1]
+                            (input port)
+  Destination:            S_0[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.953ns  (logic 6.045ns (55.189%)  route 4.908ns (44.811%))
+  Logic Levels:           5  (CARRY4=2 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U2                                                0.000     0.000 r  A_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    A_0[1]
+    U2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  A_0_IBUF[1]_inst/O
+                         net (fo=2, routed)           1.634     3.088    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I1_O)        0.124     3.212 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     3.212    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.762 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     3.762    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple_3
+    SLICE_X65Y27         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     3.984 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carryxortop_CARRY4/O[0]
+                         net (fo=1, routed)           3.274     7.258    S_0_OBUF[4]
+    E1                   OBUF (Prop_obuf_I_O)         3.694    10.953 r  S_0_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    10.953    S_0[4]
+    E1                                                                r  S_0[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A_0[1]
+                            (input port)
+  Destination:            S_0[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.405ns  (logic 5.922ns (56.914%)  route 4.483ns (43.086%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U2                                                0.000     0.000 r  A_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    A_0[1]
+    U2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  A_0_IBUF[1]_inst/O
+                         net (fo=2, routed)           1.634     3.088    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I1_O)        0.124     3.212 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     3.212    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     3.852 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[3]
+                         net (fo=1, routed)           2.849     6.701    S_0_OBUF[3]
+    F2                   OBUF (Prop_obuf_I_O)         3.704    10.405 r  S_0_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    10.405    S_0[3]
+    F2                                                                r  S_0[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A_0[1]
+                            (input port)
+  Destination:            S_0[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.281ns  (logic 5.859ns (56.988%)  route 4.422ns (43.012%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U2                                                0.000     0.000 r  A_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    A_0[1]
+    U2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  A_0_IBUF[1]_inst/O
+                         net (fo=2, routed)           1.634     3.088    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I1_O)        0.124     3.212 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     3.212    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580     3.792 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[2]
+                         net (fo=1, routed)           2.788     6.580    S_0_OBUF[2]
+    F1                   OBUF (Prop_obuf_I_O)         3.701    10.281 r  S_0_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    10.281    S_0[2]
+    F1                                                                r  S_0[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B_0[0]
+                            (input port)
+  Destination:            S_0[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.712ns  (logic 5.703ns (58.715%)  route 4.010ns (41.285%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T1                                                0.000     0.000 r  B_0[0] (IN)
+                         net (fo=0)                   0.000     0.000    B_0[0]
+    T1                   IBUF (Prop_ibuf_I_O)         1.456     1.456 r  B_0_IBUF[0]_inst/O
+                         net (fo=1, routed)           1.449     2.904    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[0]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I0_O)        0.124     3.028 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carryxor0_i_1/O
+                         net (fo=1, routed)           0.000     3.028    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/S_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.424     3.452 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[1]
+                         net (fo=1, routed)           2.561     6.013    S_0_OBUF[1]
+    G2                   OBUF (Prop_obuf_I_O)         3.699     9.712 r  S_0_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.712    S_0[1]
+    G2                                                                r  S_0[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B_0[0]
+                            (input port)
+  Destination:            S_0[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.641ns  (logic 5.522ns (57.271%)  route 4.120ns (42.729%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T1                                                0.000     0.000 r  B_0[0] (IN)
+                         net (fo=0)                   0.000     0.000    B_0[0]
+    T1                   IBUF (Prop_ibuf_I_O)         1.456     1.456 r  B_0_IBUF[0]_inst/O
+                         net (fo=1, routed)           1.449     2.904    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[0]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I0_O)        0.124     3.028 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carryxor0_i_1/O
+                         net (fo=1, routed)           0.000     3.028    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/S_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.247     3.275 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[0]
+                         net (fo=1, routed)           2.671     5.946    S_0_OBUF[0]
+    G1                   OBUF (Prop_obuf_I_O)         3.695     9.641 r  S_0_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     9.641    S_0[0]
+    G1                                                                r  S_0[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 B_0[1]
+                            (input port)
+  Destination:            S_0[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.622ns  (logic 1.609ns (61.362%)  route 1.013ns (38.638%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R2                                                0.000     0.000 r  B_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    B_0[1]
+    R2                   IBUF (Prop_ibuf_I_O)         0.216     0.216 r  B_0_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.323     0.539    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I0_O)        0.045     0.584 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     0.584    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.065     0.649 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[1]
+                         net (fo=1, routed)           0.690     1.338    S_0_OBUF[1]
+    G2                   OBUF (Prop_obuf_I_O)         1.283     2.622 r  S_0_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.622    S_0[1]
+    G2                                                                r  S_0[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B_0[1]
+                            (input port)
+  Destination:            S_0[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.793ns  (logic 1.699ns (60.835%)  route 1.094ns (39.165%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R2                                                0.000     0.000 r  B_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    B_0[1]
+    R2                   IBUF (Prop_ibuf_I_O)         0.216     0.216 r  B_0_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.323     0.539    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I0_O)        0.045     0.584 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     0.584    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.152     0.736 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[2]
+                         net (fo=1, routed)           0.771     1.506    S_0_OBUF[2]
+    F1                   OBUF (Prop_obuf_I_O)         1.286     2.793 r  S_0_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     2.793    S_0[2]
+    F1                                                                r  S_0[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A_0[3]
+                            (input port)
+  Destination:            S_0[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.863ns  (logic 1.609ns (56.208%)  route 1.254ns (43.792%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T2                                                0.000     0.000 r  A_0[3] (IN)
+                         net (fo=0)                   0.000     0.000    A_0[3]
+    T2                   IBUF (Prop_ibuf_I_O)         0.214     0.214 r  A_0_IBUF[3]_inst/O
+                         net (fo=2, routed)           0.410     0.623    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[3]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I1_O)        0.045     0.668 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[3].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     0.668    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[3].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.063     0.731 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[3]
+                         net (fo=1, routed)           0.844     1.575    S_0_OBUF[3]
+    F2                   OBUF (Prop_obuf_I_O)         1.288     2.863 r  S_0_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     2.863    S_0[3]
+    F2                                                                r  S_0[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A_0[0]
+                            (input port)
+  Destination:            S_0[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.894ns  (logic 1.627ns (56.215%)  route 1.267ns (43.785%))
+  Logic Levels:           4  (CARRY4=1 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  A_0[0] (IN)
+                         net (fo=0)                   0.000     0.000    A_0[0]
+    V2                   IBUF (Prop_ibuf_I_O)         0.229     0.229 r  A_0_IBUF[0]_inst/O
+                         net (fo=2, routed)           0.502     0.731    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[0]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I1_O)        0.045     0.776 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carryxor0_i_1/O
+                         net (fo=1, routed)           0.000     0.776    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/S_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     0.846 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/O[0]
+                         net (fo=1, routed)           0.765     1.611    S_0_OBUF[0]
+    G1                   OBUF (Prop_obuf_I_O)         1.283     2.894 r  S_0_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.894    S_0[0]
+    G1                                                                r  S_0[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B_0[1]
+                            (input port)
+  Destination:            S_0[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.077ns  (logic 1.752ns (56.940%)  route 1.325ns (43.060%))
+  Logic Levels:           5  (CARRY4=2 IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R2                                                0.000     0.000 r  B_0[1] (IN)
+                         net (fo=0)                   0.000     0.000    B_0[1]
+    R2                   IBUF (Prop_ibuf_I_O)         0.216     0.216 r  B_0_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.323     0.539    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[1]
+    SLICE_X65Y26         LUT2 (Prop_lut2_I0_O)        0.045     0.584 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1/O
+                         net (fo=1, routed)           0.000     0.584    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carryxor_i_1_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.155     0.739 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     0.739    design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple_3
+    SLICE_X65Y27         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     0.793 r  design_1_i/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carryxortop_CARRY4/O[0]
+                         net (fo=1, routed)           1.002     1.794    S_0_OBUF[4]
+    E1                   OBUF (Prop_obuf_I_O)         1.282     3.077 r  S_0_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     3.077    S_0[4]
+    E1                                                                r  S_0[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
